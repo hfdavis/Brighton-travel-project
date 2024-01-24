@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(36, 36, 63);
+}
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
@@ -5,13 +9,23 @@
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 60px;
+
+}
+
+.grid-2-columns {
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 0;
 }
 
 
+
+
 section {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 100px 0 100px 0;
 }
 
 header {
@@ -64,29 +78,70 @@ header a {
 
 }
 
+main {
+    background-color: aliceblue;
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+
+main h2 {
+    font-size: 17px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    opacity: 0.3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main h3 {
+    font-size: 40px;
+    font-family: instrument serif;
+    margin: 0;
+}
+
+main p {
+    font-size: 16px;
+
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 footer {
+
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Instrument Serif;
-    padding: 100px;
+    padding: 50px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/brighton-footer-background.jpg');
 }
 
 footer h3 {
-    font-size: 20px;
+    font-size: 28px;
     line-height: 1.5;
 }
 
 footer p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer li {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 5px 0 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 footer ul {
@@ -96,8 +151,12 @@ footer ul {
 
 footer a {
     color: aliceblue;
-    text-decoration: none;
+    text-decoration: ;
+
 }
+
+
+
 
 @media (max-width: 960px) {
     header {
@@ -120,4 +179,31 @@ footer a {
         font-size: 15px;
         padding: 10px;
     }
+
+    .grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        grid-gap: 0;
+    }
+
+    section h3 {
+        font-size: 30px;
+        padding: 2px 5px 5px 2px;
+    }
+
+    section p {
+        padding: 10px;
+    }
+
+    section {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    li {
+        padding: 5px;
+    }
+
+
+
 }
