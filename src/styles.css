@@ -334,15 +334,16 @@ footer a {
         padding: 20px;
     }
 
+    .video-content {
+        display: none;
+    }
+
 
 
     footer {
         padding: 10px;
     }
 
-    .embed {
-        display: none;
-    }
 
     .img-responsive {
         width: 100%;
